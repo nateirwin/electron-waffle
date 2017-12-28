@@ -1,0 +1,19 @@
+{
+  "name": "electron-waffle",
+  "version": "0.0.1",
+  "description": "A simple Electron wrapper around Waffle",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/nateirwin/electron-waffle",
+  "keywords": [
+    "Electron",
+    "Waffle"
+  ],
+  "author": "Nate Irwin",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  }
+}
