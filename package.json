@@ -4,6 +4,10 @@
   "description": "A simple Electron wrapper around Waffle",
   "main": "main.js",
   "scripts": {
+    "clean": "rm -rf release/",
+    "dist": "npm run clean && npm run dist:osx && npm run dmg && open ./release",
+    "dist:osx": "NODE_ENV=production electron-packager ./ \"Waffle\" --platform=darwin --arch=x64 --icon assets/images/circle.icns --out ./release --overwrite",
+    "dmg": "appdmg dmg.json \"release/Waffle.dmg\"",
     "start": "electron ."
   },
   "repository": "https://github.com/nateirwin/electron-waffle",
@@ -14,6 +18,11 @@
   "author": "Nate Irwin",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "~1.7.8"
+    "appdmg": "0.4.5",
+    "electron": "~1.7.8",
+    "electron-packager": "^10.1.0"
+  },
+  "dependencies": {
+    "standard": "^10.0.3"
   }
 }
