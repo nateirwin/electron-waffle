@@ -8,9 +8,9 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/nateirwin/waffle-electron
+git clone https://github.com/nateirwin/electron-waffle
 # Go into the repository
-cd waffle-electron
+cd electron-waffle
 # Install dependencies
 npm install
 # Run the app
